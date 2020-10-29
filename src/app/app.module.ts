@@ -13,7 +13,8 @@ import { LoisirsComponent } from './loisirs/loisirs.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { CompetencesComponent } from './competences/competences.component';
-
+import { MzdTimelineModule } from 'ngx-rend-timeline';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,12 @@ import { CompetencesComponent } from './competences/competences.component';
     LoisirsComponent,
     ExperienceComponent,
     PresentationComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
+    MzdTimelineModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
