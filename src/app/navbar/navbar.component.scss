@@ -1,0 +1,33 @@
+@import "../../styles.scss";
+
+.navbar {
+  p {
+    font-size: 20px;
+    color: white;
+  }
+
+  .actions {
+    button {
+      color: white;
+      font-size: 20px;
+      background-color: transparent;
+      border: solid 2px mat-color($site-cv-accent);
+      border-radius: 15px;
+      margin: 5%;
+      padding: 1% 5% 1% 5%;
+      cursor: pointer;
+    }
+  }
+
+  .spacer {
+    flex: .5 1 auto;
+  }
+
+  .home {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+}
