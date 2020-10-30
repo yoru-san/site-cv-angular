@@ -4,38 +4,40 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoisirsComponent } from './loisirs/loisirs.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { PresentationComponent } from './presentation/presentation.component';
-import { CompetencesComponent } from './competences/competences.component';
-import { MzdTimelineModule } from 'ngx-rend-timeline';
-import { TimelineComponent } from './timeline/timeline.component';
+
+import { PresentationModule } from './presentation/presentation.module';
+import { CompetenceModule } from './competences/competences.module';
+import { LoisirsModule } from './loisirs/loisirs.module';
+import { ExperienceModule } from './experience/experience.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
-    LoisirsComponent,
-    ExperienceComponent,
-    PresentationComponent,
-    CompetencesComponent,
-    TimelineComponent
+    FooterComponent
   ],
   imports: [
+    PresentationModule,
+    CompetenceModule,
+    LoisirsModule,
+    ExperienceModule,
     BrowserModule,
-    MzdTimelineModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [
+    PresentationModule,
+    CompetenceModule,
+    LoisirsModule,
+    ExperienceModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

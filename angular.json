@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "site-cv"
+    }
+  },
+  "defaultProject": "site-cv",
+  "cli": {
+    "analytics": false
+  }
 }
