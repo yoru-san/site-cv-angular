@@ -1,5 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -11,13 +13,15 @@ import { NavbarComponent } from './navbar/navbar.component';
     ],
     imports: [
         RouterModule,
-        MatToolbarModule
+        MatToolbarModule,
+        BrowserModule,
+        CommonModule
     ],
     exports: [
         FooterComponent,
         NavbarComponent
     ],
-    providers: [],
+    providers: [BrowserModule],
     bootstrap: []
 })
-export class CommonModule { }
+export class SharedModule { }

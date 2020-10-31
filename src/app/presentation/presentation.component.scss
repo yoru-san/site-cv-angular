@@ -1,0 +1,38 @@
+@import '../../styles.scss';
+
+.presentation {
+    // text-align: center;
+    width: 100%;
+
+    .presentation-title {
+        // display: flex;
+        // flex-direction: row;
+
+        .img-celine { //Permet de ne pas avoir une image étirée
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-image: url('../../assets//img/celine.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+    
+        .title {
+            line-height: 40px;
+            span {
+                font-size: 34px;
+                color: mat-color($site-cv-accent);
+            }
+        }
+    }
+}
+
+    .presentation-detail {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+
+        .detail-checkbox {
+            font-size: 18px;
+        }
+    }

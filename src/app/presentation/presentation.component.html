@@ -1,1 +1,18 @@
-<img mat-card-avatar src="../../assets/img/celine.jpg">
+<div class="presentation">
+    <div class="presentation-title">
+        <div class="img-celine"></div>
+        <div class="title">
+            <span>Céline BERTAUD</span><br>
+            <span>Développeuse Web</span>
+        </div>
+    </div>
+
+    <div class="presentation-detail" *ngIf="details">
+        <span *ngFor="let detail of details">
+            <mat-checkbox class="detail-checkbox" [checked]="true" [color]="accent">
+                {{detail}}
+            </mat-checkbox>
+            <br>
+        </span>
+    </div>
+</div>

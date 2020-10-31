@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentationComponent implements OnInit {
 
+  public details: string[] = [
+    "21 ans",
+    "Etudiante à Ynov Toulouse",
+    "Employée chez Chausson Matériaux"
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

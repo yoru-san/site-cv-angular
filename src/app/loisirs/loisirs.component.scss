@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+span {
+    font-size: 40px;
+    color: mat-color($site-cv-accent);
+    text-align: center;
+}
+
+.loisirs {
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+
+
+}

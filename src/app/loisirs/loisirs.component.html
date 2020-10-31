@@ -1,1 +1,6 @@
-<p>loisirs works!</p>
+<span>Mes loisirs</span>
+<div class="loisirs">
+    <ng-container *ngFor="let loisir of loisirs">
+        <app-loisir [nom]="loisir.nom" [img]="loisir.img"></app-loisir>
+    </ng-container>
+</div>

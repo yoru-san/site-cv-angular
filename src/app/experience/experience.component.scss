@@ -1,6 +1,6 @@
 @import '../../styles.scss';
 
-h1 {
-    text-align: center;
-    color: mat-color($site-cv-warn);
+span {
+    color: mat-color($site-cv-accent);
+    font-size: 40px;
 }

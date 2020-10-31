@@ -9,27 +9,24 @@ import { PresentationModule } from './presentation/presentation.module';
 import { CompetenceModule } from './competences/competences.module';
 import { LoisirsModule } from './loisirs/loisirs.module';
 import { ExperienceModule } from './experience/experience.module';
-import { CommonModule } from './common/common.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
     PresentationModule,
     CompetenceModule,
     LoisirsModule,
     ExperienceModule,
-    CommonModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [
-    PresentationModule,
-    CompetenceModule,
-    LoisirsModule,
-    ExperienceModule,
-    CommonModule
+    SharedModule
   ],
   bootstrap: [AppComponent]
 })
